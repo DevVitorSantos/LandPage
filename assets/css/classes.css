@@ -1,7 +1,7 @@
 
 /* ============ ========== MODELOS  ========================*/
 .main-bg{
-  background: url('/LP/assets/img/confetti-doodles.svg') no-repeat center center;
+  background: url('../img/confetti-doodles.svg') no-repeat center center;
   background-size: cover;
   color: var(--white-color);
 }
