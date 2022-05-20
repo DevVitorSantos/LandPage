@@ -1,0 +1,26 @@
+
+/* ============ ========== MODELOS  ========================*/
+.main-bg{
+  background: url('/LP/assets/img/confetti-doodles.svg') no-repeat center center;
+  background-size: cover;
+  color: var(--white-color);
+}
+
+.white-bg{
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+}
+
+.main-content{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.section{
+  min-height: 100vh;
+}
+
+.menu-spacing{
+  height: 6.4rem;
+}
