@@ -2,7 +2,7 @@
 <br/>
 
 <p align="center">
-  <a href="#"><img src="https://raw.githubusercontent.com/DevVitorSantos/LandPage/main/LP/assets/img/lp.JPG" alt="#"></img></a>
+  <a href="#"><img src="https://raw.githubusercontent.com/DevVitorSantos/LandPage/main/assets/img/lp.JPG" alt="#"></img></a>
 </p>
 
 <br/>
