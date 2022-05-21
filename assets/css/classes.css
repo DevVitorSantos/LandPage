@@ -6,21 +6,26 @@
   color: var(--white-color);
 }
 
-.white-bg{
-  background-color: #FFFFFF;
+.white-bg {
+  background: var(--white-color);
   color: var(--primary-color);
 }
 
-.main-content{
+.main-content {
   max-width: 120rem;
   margin: 0 auto;
-  padding: var(--gap);
+  padding: 10rem var(--gap);
 }
 
-.section{
+.section {
   min-height: 100vh;
 }
 
-.menu-spacing{
-  height: 6.4rem;
+.menu-spacing {
+  height: 65px;
+}
+
+body .full-width {
+  width: 100%;
+  flex: 1 1 100%;
 }

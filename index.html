@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./assets/js/index.js"></script>
   <link rel="stylesheet" href="./assets/css/index.css">
@@ -17,18 +17,27 @@
   <title>Land Page</title>
 </head>
 <body>
+  <input 
+  id="close-menu"
+  class="close-menu"
+  type="checkbox" 
+  role="button" 
+  aria-label="Close Menu"/>
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
   <aside class="menu white-bg">
     <div class="main-content menu-content">
-      <span> 
+      <span onclick="getElementById('close-menu').checked = false;"> 
         <a href="#"> LOGO </a>
       </span>
       <nav>
-        <ul>
-          <li><a href="#">Intro</a></li>
-          <li><a href="#">Top 3</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#top3">Top 3</a></li>
+          <li><a href="#grid-one">Grid-One</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
       </nav>
@@ -37,10 +46,10 @@
   </aside>
   <div class="menu-spacing"></div>
 
-  <section class="intro main-bg section">
+  <section id="intro" class=" main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
-        <h2>These mixins take those declared breakpoints, subtract </h2>
+        <h1 class="intro-h1">These mixins take those declared breakpoints, subtract </h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing
           and typesetting industry. Lorem Ipsum has been the industry's
@@ -50,14 +59,281 @@
       </div>
       <div class="intro-img">
         <img src="assets/img/undraw_static_assets_rpm6.svg" 
-        alt="Tecnologias html5 css3 e javascript" >
+        alt="Tecnologias html5 css3 e javascript" />
       </div>
     </div>
     
     
   </section>
-  <section class="white-bg section">
-    
+  <!-- =================== Top 3 ===================== -->
+  <section id="top3" class="white-bg section">
+    <div class="top3-content main-content">
+      <h2>These mixins take those declared, subtract </h2>
+      <div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div>
   </section>
+
+  <!-- =================== Grid One ===================== -->
+  <section id="grid-one" class="grid-one main-bg section">
+    
+    <div class="grid-one-content main-content">
+      <h2 class="grid-main-heading">My Grid One</h2>
+      <p class="grid-main-description"> Small Description ,simply dummy text of the printing</p>
+      <div class="grid">
+        <section>
+          <h3>Teste 1</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </section>
+        
+        <section>
+          <h3>Teste 1</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </section>
+
+        <section>
+          <h3>Teste 1</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book.
+          </p>
+        </section>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- =================== Gallery  ===================== -->
+  <section id="gallery" class="gallery-content white-bg section">
+    <div class="main-content">
+      <h2 class="grid-main-heading">Work </h2>
+      <p class="grid-main-description"> Small Description ,simply dummy text of the printing</p>
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=1" 
+          alt="random image" >
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=2" 
+          alt="random image" >
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=3" 
+          alt="random image" >
+        </div>
+
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=4" 
+          alt="random image" >
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=5" 
+          alt="random image" >
+        </div>
+        <div class="gallery-img">
+          <img src="https://source.unsplash.com/random/360x360?r=6" 
+          alt="random image" >
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- =================== Recent Job ===================== -->
+<section id="recent-job" class="grid-one main-bg section">
+    
+  <div class="grid-one-content main-content">
+    <h2 class="grid-main-heading">Recent Job</h2>
+    <p class="grid-main-description"> Small Description ,simply dummy text of the printing</p>
+    <div class="grid">
+      <section>
+        <h3>Teste 1</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+      
+      <section>
+        <h3>Teste 1</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+
+      <section>
+        <h3>Teste 1</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer 
+          took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </section>
+    </div>
+    
+  </div>
+</section>
+
+<!-- =================== Recent Job ===================== -->
+<section id="pricing" class="white-bg section">
+  <div class="top3-content main-content">
+    <h2>Pricing </h2>
+    <div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer 
+        took a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <div class="responsive-table">
+        <table>
+          <caption>Pricing Table</caption>
+          <thead>
+            <tr>
+              <th>Title 1</th>
+              <th>Title 2</th>
+              <th>Title 3</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>Content 01</td>
+              <td>Content 02</td>
+              <td>Content 03</td>
+            </tr>
+            <tr>
+              <td>Content 01</td>
+              <td>Content 02</td>
+              <td>Content 03</td>
+            </tr>
+            <tr>
+              <td>Content 01</td>
+              <td>Content 02</td>
+              <td>Content 03</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Footer</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== Contact ===================== -->
+<section id="contact" class="contact main-bg section">
+  <div class="main-content intro-content">
+    <div class="intro-text-content">
+      <h2 class="intro-h1">contact </h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer 
+        took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+    <div class="intro-img">
+      <img src="assets/img/undraw_static_assets_rpm6.svg" 
+      alt="Tecnologias html5 css3 e javascript" >
+    </div>
+
+    <div class="contact-form">
+      <fieldset class="form-grid">
+        <legend class=""> Contact !</legend>
+
+        <div class="form-group">
+          <label for="first-name"> First name</label>
+          <input type="text" name="first-name" 
+          id="first-name" placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="last-name"> last name</label>
+          <input type="text" name="last-name" 
+          id="last-name" placeholder="Last Name">
+        </div>
+
+        <div class="form-group">
+          <label for="email"> Email</label>
+          <input type="text" name="email" 
+          id="email" placeholder="Type Your Email">
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">Message</label>
+          <textarea name="" id="" 
+          cols="30" rows="10"
+          placeholder="Leave a Message"></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <button type="submit" id="send">Send message</button>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  
+  
+</section>
+
+<footer id="footer" class="white-bg">
+  <section class="footer-content">
+    <p><a href="https://github.com/DevVitorSantos" target="_blank" >
+      Feito com Carinho ❤️ por - Vitor Santos 
+    </a></p>
+  </section>
+  
+</footer>
+
+<a href="#intro" class="back-to-top">➤</a>
 </body>
 </html>
