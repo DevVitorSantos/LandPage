@@ -1,3 +1,4 @@
+
 /* ============== INTRO CONTENT ================== */
 .intro-content{
   display: grid;
@@ -284,8 +285,11 @@
   }
 }
 
-@media ( max-width:550px){
-  .intro-content img{
-    width: 30%;
+@media ( max-width:530px){
+
+  .intro-h1{
+    font-size: 4rem;
   }
+
+
 }
